@@ -89,5 +89,21 @@ int main() {
     } else {
         cout << letter << " is not a letter\n";
     }
+
+    // Exercise 6
+    char ltrnum;
+    cin >> ltrnum;
+    if (ltrnum >= 65 && ltrnum <= 90) {
+        ltrnum += 32;
+        cout << ltrnum << endl;
+    }
+    else if (ltrnum >= 97 && ltrnum <= 122) {
+        ltrnum -= 32;
+        cout << ltrnum << endl;
+    } else if (ltrnum >= '0' && ltrnum <= '9'){
+        double number = ltrnum - '0';
+        number = pow(number, 2);
+        cout << number << endl;
+    }
     return 0;
 }
