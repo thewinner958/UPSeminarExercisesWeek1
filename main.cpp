@@ -48,5 +48,32 @@ int main() {
         qdex2 = (-qdnb - discriminant) / (2 * qdna);
         cout << qdex1 << endl << qdex2 << endl;
     }
+
+    // Exercise 4
+    double x, y;
+    char oper;
+    double result = 0;
+    cin >> x >> oper >> y;
+    switch (oper) {
+        case '+':
+            result = x + y;
+            break;
+        case '-':
+            result = x - y;
+            break;
+        case '*':
+            result = x * y;
+            break;
+        case '/':
+            if (x == 0 || y == 0) {
+                cout << "You can't divide by 0\n";
+                return 0;
+            }
+            result = x / y;
+            break;
+        default:
+            break;
+    }
+    cout << result << endl;
     return 0;
 }
