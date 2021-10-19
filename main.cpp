@@ -105,5 +105,24 @@ int main() {
         number = pow(number, 2);
         cout << number << endl;
     }
+
+    // Exercise 7
+    double glue, slats, paint;
+    double minGlue = 10;
+    double minSlats = 4;
+    double minPaint = 20;
+    double endProducts = 0;
+    cin >> glue >> slats >> paint;
+    while (glue >= minGlue && slats >= minSlats && paint >= minPaint) {
+        glue -= minGlue;
+        slats -= minSlats;
+        paint -= minPaint;
+        endProducts += 1;
+    }
+    bool kidToy = glue >= 3 && slats >= 2 && glue >= 7;
+    cout << "We can make " << endProducts << " end products\n";
+    if (kidToy) {
+        cout << "We can also make a kid's toy\n";
+    }
     return 0;
 }
