@@ -101,9 +101,9 @@ int main() {
         ltrnum -= 32;
         cout << ltrnum << endl;
     } else if (ltrnum >= '0' && ltrnum <= '9'){
-        double number = ltrnum - '0';
-        number = pow(number, 2);
-        cout << number << endl;
+        double num = ltrnum - '0';
+        num = pow(num, 2);
+        cout << num << endl;
     }
 
     // Exercise 7
